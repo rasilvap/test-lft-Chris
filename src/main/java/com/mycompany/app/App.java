@@ -5,7 +5,7 @@ public class App {
     System.out.println("Hello world");
   }
 
-/*  private String getName() {
+  private String getName() {
     return "Unused name";
   }
 
@@ -20,6 +20,5 @@ public class App {
   private String getYear() {
     return "Unused year";
   }
-*/
 }
 
