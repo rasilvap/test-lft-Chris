@@ -11,6 +11,9 @@ class Person {
         this.lastName = lastName;
     }
 
+    /**
+     * @return the firstName
+     */
     public String getFirstName() {
         return firstName;
     }
