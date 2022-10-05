@@ -23,7 +23,7 @@ def emitApplicable():
     print(json.dumps(True))
 
 def run(runInfo):
-    print(json.dump({}))
+    print(json.dumps({}))
 
 def finalize(args, info):
     codedir = args[1]
