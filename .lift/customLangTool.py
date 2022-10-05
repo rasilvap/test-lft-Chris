@@ -32,7 +32,7 @@ def finalize(args, info):
     outputs = {
         'toolNotes': [{
             'type': 'using-crufty-language',
-            'message': '"{}" is crufty'.format(langauage),
+            'message': '"{}" is crufty have you heard of Rust'.format(langauage),
             'file': os.path.join(codedir, 'src/main/java/com/mycompany/app/App.java'),
             'line': 1,
             'column': 0
@@ -43,8 +43,6 @@ def finalize(args, info):
 
 def main():
     args = sys.argv
-
-    info = json.loads(sys.stdin.read())
 
     if (len(args) < 4):
         emitStartInfo()
@@ -57,8 +55,10 @@ def main():
         elif cmd == "applicable":
             emitApplicable()
         elif cmd == "run":
+            info = json.loads(sys.stdin.read())
             run(info)
         elif cmd == "finalize":
+            info = json.loads(sys.stdin.read())
             finalize(args, info)
 
 if __name__ == "__main__":
