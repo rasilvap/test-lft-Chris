@@ -27,12 +27,12 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
-<!--                    <configuration>-->
-<!--                      <compilerArgs>-->
-<!--                        <arg>-Xlint:all</arg>-->
-<!--                      </compilerArgs>-->
-<!--                      <showWarnings>true</showWarnings>-->
-<!--                    </configuration>-->
+                    <configuration>
+                      <compilerArgs>
+                        <arg>-Xlint:all</arg>
+                      </compilerArgs>
+                      <showWarnings>true</showWarnings>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
