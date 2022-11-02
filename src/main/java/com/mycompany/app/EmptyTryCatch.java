@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class EmptyTryCatch
 {
-    public void doStuff() {;
+    public void doStuff(Float val1, Float val2, Float val3) {;
         try {
             System.out.println("doing a thing");
 
@@ -14,9 +14,11 @@ public class EmptyTryCatch
 
 
         // long to float conversion implicit https://errorprone.info/bugpattern/LongFloatConversion
-        Color temp =  new Color(Math.round(18.0), Math.round(0.0), Math.round(18.0));
+        Color temp =  new Color(Math.round(val1), Math.round(val2), Math.round(val3));
 
         // always throws (but not triggering for some reason)
         throw new RuntimeException("WTF: " + temp);
     }
+
+
 }
