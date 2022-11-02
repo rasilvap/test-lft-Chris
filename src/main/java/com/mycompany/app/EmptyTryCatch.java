@@ -1,9 +1,12 @@
 package com.mycompany.app;
 
 import java.awt.*;
+import java.nio.DoubleBuffer;
 
 public class EmptyTryCatch
 {
+    private final DoubleBuffer myBuffer = DoubleBuffer.allocate(10);
+
     public void doStuff(Float val1, Float val2, Float val3) {;
         try {
             System.out.println("doing a thing");
@@ -20,5 +23,8 @@ public class EmptyTryCatch
         throw new RuntimeException("WTF: " + temp);
     }
 
+    protected void set(final int index, final float value) {
+        myBuffer.put(index, value);
+    }
 
 }
