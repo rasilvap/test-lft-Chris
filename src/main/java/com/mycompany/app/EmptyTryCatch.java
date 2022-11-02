@@ -5,7 +5,13 @@ import java.nio.DoubleBuffer;
 
 public class EmptyTryCatch
 {
+    private static String SetMeInConstructor;
+
     private final DoubleBuffer myBuffer = DoubleBuffer.allocate(10);
+
+    public EmptyTryCatch() {
+            SetMeInConstructor = "foo-bar-is-static";
+    }
 
     public void doStuff(Float val1, Float val2, Float val3) {;
         try {
