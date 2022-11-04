@@ -13,7 +13,7 @@ public class EmptyTryCatch
             SetMeInConstructor = "foo-bar-is-static";
     }
 
-    public void doStuff(long val1, long val2, long val3) {;
+    public void doStuff(long val1, long val2, int val3) {;
         try {
             System.out.println("doing a thing");
 
@@ -26,7 +26,7 @@ public class EmptyTryCatch
         Color temp =  new Color(Math.round(val1), Math.round(val2), Math.round(val3));
 
         // always throws (but not triggering for some reason)
-        throw new RuntimeException("WTF: " + temp);
+        throw new RuntimeException("WTF now: " + temp);
     }
 
     protected void set(final int index, final float value) {
