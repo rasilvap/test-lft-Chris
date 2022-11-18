@@ -7,6 +7,7 @@ public class App {
     Derived d = new Derived();
     Base b = (Base) d;
 
+    // new comment
     Base c = (Base) new Base();
     System.out.println(b);
     System.out.println(c);
