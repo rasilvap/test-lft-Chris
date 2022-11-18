@@ -1,5 +1,6 @@
 package com.mycompany.app;
 
+import com.google.common.primitives.Ints;
 import java.awt.*;
 import java.nio.DoubleBuffer;
 
@@ -23,7 +24,7 @@ public class EmptyTryCatch
 
 
         // long to float conversion implicit https://errorprone.info/bugpattern/LongFloatConversion
-        Color temp =  new Color(Math.round(val1), Math.round(val2), Math.round(val3));
+        Color temp =  new Color(Ints.saturatedCast(val1), Ints.saturatedCast(val2), val3);
 
         // always throws (but not triggering for some reason)
 	// added a comment to bump PR
