@@ -23,6 +23,7 @@ public class EmptyTryCatch
 
 
         // long to float conversion implicit https://errorprone.info/bugpattern/LongFloatConversion
+	// add a comment next to an offending line
         Color temp =  new Color(Math.round(val1), Math.round(val2), Math.round(val3));
 
         // always throws (but not triggering for some reason)
