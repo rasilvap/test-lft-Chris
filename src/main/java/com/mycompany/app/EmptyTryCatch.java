@@ -6,7 +6,6 @@ import java.util.TimeZone
 
 public class EmptyTryCatch
 {
-    private static TimeZone tz = TimeZone.getTimeZone("Moon/Crater");
     private static String SetMeInConstructor;
 
     private final DoubleBuffer myBuffer = DoubleBuffer.allocate(10);
@@ -23,7 +22,6 @@ public class EmptyTryCatch
             throw new RuntimeException("I always do this");
         } catch (Exception ex) {}
 
-
         // long to float conversion implicit https://errorprone.info/bugpattern/LongFloatConversion
         Color temp =  new Color(Math.round(val1), Math.round(val2), Math.round(val3));
 
@@ -33,6 +31,10 @@ public class EmptyTryCatch
 
     protected void set(final int index, final float value) {
         myBuffer.put(index, value);
+    }
+
+    TimeZone onTheMoon() {
+	return TimeZone.getTimeZone("Moon/Crater");
     }
 
 }
