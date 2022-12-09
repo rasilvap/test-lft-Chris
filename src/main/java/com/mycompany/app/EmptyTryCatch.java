@@ -2,11 +2,11 @@ package com.mycompany.app;
 
 import java.awt.*;
 import java.nio.DoubleBuffer;
-//import java.util.TimeZone
+import java.util.TimeZone
 
 public class EmptyTryCatch
 {
-    //private static TimeZone = getTimeZone("Antartica");
+    private static TimeZone = TimeZone.getTimeZone("Moon/Crater");
     private static String SetMeInConstructor;
 
     private final DoubleBuffer myBuffer = DoubleBuffer.allocate(10);
