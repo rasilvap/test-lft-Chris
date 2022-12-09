@@ -2,7 +2,7 @@ package com.mycompany.app;
 
 import java.awt.*;
 import java.nio.DoubleBuffer;
-import java.util.TimeZone
+import java.util.TimeZone;
 
 public class EmptyTryCatch
 {
