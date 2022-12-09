@@ -6,7 +6,7 @@ import java.util.TimeZone
 
 public class EmptyTryCatch
 {
-    static TimeZone = TimeZone.getTimeZone("Antartica");
+    private static TimeZone = getTimeZone("Antartica");
     private static String SetMeInConstructor;
 
     private final DoubleBuffer myBuffer = DoubleBuffer.allocate(10);
