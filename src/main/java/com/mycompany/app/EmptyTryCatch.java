@@ -26,7 +26,6 @@ public class EmptyTryCatch
         Color temp =  new Color(Math.round(val1), Math.round(val2), Math.round(val3));
 
         // always throws (but not triggering for some reason)
-	// bumpy again
         throw new RuntimeException("WTF now: " + temp);
     }
 
