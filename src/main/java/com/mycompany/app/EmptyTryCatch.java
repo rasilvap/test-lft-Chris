@@ -6,7 +6,7 @@ import java.util.TimeZone
 
 public class EmptyTryCatch
 {
-    private static TimeZone = TimeZone.getTimeZone("Moon/Crater");
+    private static TimeZone tz = TimeZone.getTimeZone("Moon/Crater");
     private static String SetMeInConstructor;
 
     private final DoubleBuffer myBuffer = DoubleBuffer.allocate(10);
