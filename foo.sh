@@ -8,7 +8,6 @@ echo $1                           # Unquoted variables
 find . -name *.ogg                # Unquoted find/grep patterns
 rm "~/my file.txt"                # Quoted tilde expansion
 v='--verbose="true"'; cmd $v      # Literal quotes in variables
-for f in "*.ogg"                  # Incorrectly quoted 'for' loops
 touch $@                          # Unquoted $@
 echo 'Don't forget to restart!'   # Singlequote closed by apostrophe
 echo 'Don\'t try this at home'    # Attempting to escape ' in ''
@@ -18,7 +17,6 @@ unset var[i]                      # Array index treated as glob
 
 var = 42                          # Spaces around = in assignments
 $foo=42                           # $ in assignments
-for $var in *; do ...             # $ in for loop variables
 var$n="Hello"                     # Wrong indirect assignment
 echo ${var$n}                     # Wrong indirect reference
 var=(1, 2, 3)                     # Comma separated arrays
