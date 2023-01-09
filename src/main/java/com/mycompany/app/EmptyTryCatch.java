@@ -33,8 +33,16 @@ public class EmptyTryCatch
         myBuffer.put(index, value);
     }
 
-    TimeZone onTheMoon() {
+    java.util.TimeZone onTheMoon() {
 	return TimeZone.getTimeZone("Moon/Crater");
+    }
+
+    public static boolean fooMethod() {
+
+	public static boolean isValidAccessorName(final String accessorName) {
+	    return false;
+	}
+	return true;
     }
 
 }
