@@ -38,11 +38,11 @@ public class EmptyTryCatch
     }
 
     public static boolean fooMethod() {
-
-	public static boolean isValidAccessorName(final String accessorName) {
-	    return false;
-	}
 	return true;
+    }
+
+    public static boolean isValidAccessorName(final String accessorName) {
+	return false;
     }
 
 }
