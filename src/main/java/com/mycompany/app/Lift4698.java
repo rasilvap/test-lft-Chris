@@ -8,7 +8,7 @@ public class Lift4698
         Derived d = new Derived();
         Base b = (Base) d;
 
-        // redundant cast, should trigger xlint
+        // redundant cast
         Base c = (Base) new Base();
         System.out.println(b);
         System.out.println(c);
